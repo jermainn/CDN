@@ -55,3 +55,22 @@ startdash				# 博客主题个人兴趣的封面
 post_video				# 存储博客文章中的视频文件
 ```
 
+---
+
+
+
+## 视频切片
+
+```cmd
+# 首先确保视频的视频流编码格式是h.264，音频的编码格式是aac
+# 使用ffmpeg查看
+# 如果不满足使用格式工厂等软件转换
+ffmpeg -i 文件名.mp4
+
+# 第一步：mp4转换成ts格式，转换前后文件大小基本不变
+ffmpeg -y -i 文件名.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 文件名.ts
+
+# 第二步：按间隔分片，下面按每20s进行分片，确保每个分片大小小于20MB即可
+ffmpeg -i 文件名.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 20 文件名_%03d.ts
+```
+
