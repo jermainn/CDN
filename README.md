@@ -19,6 +19,7 @@ git push -u origin master
 
 ```
 cdn: https://cdn.jsdelivr.net/gh/jermainliu/cdn
+# 可在后面加 @tags(号)，或者添加 @分支
 ```
 
 目录结构：
