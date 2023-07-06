@@ -16,7 +16,7 @@ git push -u origin master
 ## cdn位置
 
 ```
-cdn: https://cdn.jsdelivr.net/gh/jermainliu/cdn@master
+cdn: https://cdn.jsdelivr.net/gh/jermainn/cdn@master
 cdn: https://cdn.staticaly.com/gh/用户名/仓库名@master
 # 可在后面加 @tags(号)，或者添加 @分支
 ```
