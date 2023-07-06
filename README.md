@@ -11,8 +11,6 @@ git commit -m "注释"
 git push -u origin master
 ```
 
-
-
 ---
 
 ## cdn位置
@@ -47,19 +45,17 @@ CDN
 其中
 
 ```
-cover					# 存储博客背景图片
-cover_photo				# 存储博客文章封面图片
-donate					# 存储捐赠图片
-logo					# 存储一些使用的网站的logo图标
-social					# 存储社交账户
-startdash				# 博客主题个人兴趣的封面
+cover                    # 存储博客背景图片
+cover_photo                # 存储博客文章封面图片
+donate                    # 存储捐赠图片
+logo                    # 存储一些使用的网站的logo图标
+social                    # 存储社交账户
+startdash                # 博客主题个人兴趣的封面
 
-post_video				# 存储博客文章中的视频文件
+post_video                # 存储博客文章中的视频文件
 ```
 
 ---
-
-
 
 ## 视频切片
 
@@ -75,4 +71,3 @@ ffmpeg -y -i 文件名.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 文�
 # 第二步：按间隔分片，下面按每20s进行分片，确保每个分片大小小于20MB即可
 ffmpeg -i 文件名.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 20 文件名_%03d.ts
 ```
-
