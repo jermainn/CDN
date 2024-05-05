@@ -23,6 +23,21 @@ cdn: https://cdn.staticaly.com/gh/用户名/仓库名@master
 例如：https://cdn.jsdelivr.net/gh/jermainn/cdn@master/images/avatar.webp
 ```
 
+```
+# 其他加速
+fastly加速：
+- https://fastly.jsdelivr.net/gh/GitHub账户名/仓库名@master
+- https://fastly.jsdelivr.net/gh/jermainn/cdn@master
+例如：https://fastly.jsdelivr.net/gh/jermainn/cdn@master/images/avatar.webp
+
+gcore加速：
+- https://gcore.jsdelivr.net/gh/jermainn/cdn@master
+- https://gcore.jsdelivr.net/gh/jermainn/cdn@master
+例如：https://gcore.jsdelivr.net/gh/jermainn/cdn@master/images/avatar.webp
+```
+
+
+
 目录结构：
 
 ```cmd
