@@ -1,0 +1,91 @@
+.comparison-container {
+    display: flex; /* 横向排列多个图像组 */
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 224px; /* 根据需要调整宽度 */
+    height: 224px; /* 根据需要调整高度 */
+    margin: 0 30px; /* 设置左右间距 */
+    overflow: hidden; /* 隐藏溢出 */
+    cursor: pointer; /* 鼠标移到图片上时显示手势 */
+    transition: all 0.3s; /* 添加过渡效果 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+    border-radius: 5px;
+}
+
+.image-before, .image-after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-after {
+    clip: rect(0, 112px, 224px, 0); /* 初始显示一部分 */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: calc(50% - 1px);
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: ew-resize;
+}
+
+.slider button {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: -4px;
+    width: 10px;
+    height: 80px;
+    background-color: #ddd;
+    border: 4px solid #fff;
+    padding: 0;
+    outline: 0;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+.slider button:hover {
+    background-color: #777; /* 悬停时变深的颜色 */
+}
+
+.slider .beforeDescription,
+.slider .afterDescription {
+    position: absolute;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow: -1px -1px 2px #000, 1px 1px 2px #000;
+}
+
+
+/* .slider .beforeDescription select {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px
+} */
+
+.slider .afterDescription {
+    top: 10px;
+    right: 20px;
+}
+
+.slider .beforeDescription {
+    top: 10px;
+    /* right: -50px; */
+    right: -520px;
+    width: 500px
+}
+
