@@ -1,0 +1,58 @@
+.link-block {
+    position: relative;
+  }
+  
+  /* 样式只应用于有 coming-soon-button 类的按钮 */
+  .coming-soon-button {
+    background-color: #666; /* 灰色背景 */
+    color: white;
+    opacity: 0.7; /* 添加透明度 */
+  }
+  
+  .coming-soon-button.is-inactive {
+    pointer-events: none; /* 禁用点击 */
+  }
+  
+  /* 仅对 coming-soon-button 的图标颜色应用样式 */
+  .coming-soon-button .icon i {
+    color: white; 
+  }
+  .coming-soon i {
+    color: #ff9900; /* 图标颜色 */
+  }
+  
+  /* 限制样式到 coming-soon */
+  .coming-soon {
+    position: absolute; /* 绝对定位 */
+    top: -7px; /* 向上移动 */
+    right: -7px; /* 向右移动 */
+    font-size: 14px; /* 放大图标 */
+    display: inline-block;
+  }
+  
+  .coming-soon .tooltip {
+    visibility: hidden;
+    background-color: #ffcc00; /* Tooltip 背景色 */
+    color: black;
+    text-align: center;
+    border-radius: 3px;
+    padding: 3px 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* 显示在图标上方 */
+    left: 50%;
+    transform: translateX(-50%); /* 居中显示 */
+    opacity: 0;
+    transition: opacity 0.3s; /* 平滑过渡 */
+    font-size: 9px; /* 缩小字体 */
+    font-weight: bold;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* 加入阴影效果 */
+  
+  }
+  
+  /* 鼠标悬停时显示 Tooltip */
+  .coming-soon:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* 显示 Tooltip */
+  }
+  
