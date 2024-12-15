@@ -1,0 +1,19 @@
+[
+    {
+      "author": "",
+      "avatar": "",
+      "date": "2024-06-21 23:33:26",
+      "content": "这是时间对我们的迫害，同样的距离，展望时是那么漫长，会议时却如此短暂。\n—— 余华《山谷微风》",
+      "key": "jermain",
+      "tags": ["阅读"]
+    },
+    {
+      "author": "jermain",
+      "avatar": "https://cdn.jsdelivr.net/gh/jermainn/cdn@master/images/avatar.webp",
+      "date": "2024-12-13 17:35:01",
+      "content": "TThis is a sample content for **Author 1**. \n![Sample Image](https://cdn.jsdelivr.net/gh/jermainn/cdn@master/images/avatar.webp)",
+      "key": "jermain",
+      "tags": ["测试"]
+    }
+  ]
+  
